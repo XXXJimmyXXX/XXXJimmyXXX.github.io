@@ -41,12 +41,17 @@ I shall now add a line break<br>new line
   <input type="text" ng-model="message" />
   <span> {{ message }} </span>  
    <h2>Todo</h2>
-      <ul class="todo-list" ng-repeat="todo in todos track by $index">
-      	<li>
+      <ul class="todo-list" >
+      ng-repeat="todo in todos track by $index"
           <span>{{ todo }}</span>
           <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
         </li>
-      </ul>
+      </ul> <ul class="add-todo">
+    <li>
+      <input type="text" class="txt" placeholder="New Todo"
+             ng-model="newTodo" ng-keyup="add($event)" />
+    </li>
+  </ul>
  </div> 
 </div>
     <script src="/scripts.js"></script>
