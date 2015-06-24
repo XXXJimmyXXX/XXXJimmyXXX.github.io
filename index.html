@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/styles.css">
 </head>
-<body>
+<body ng-app="Todo">
 <div class="page">
 <h1>This is the Title</h1>
 <div class="row">
@@ -35,7 +35,12 @@ I shall now add a line break<br>new line
 <br>this is the end-or is it</p>
 <p>
 <a target_blank href="http://google.com">This is a link to stuff</a>
-</p> </div>
+ <div class="page-container" ng-controller="TodoCtrl">
+  <input type="text" ng-model="message" />
+  <span> {{ message }} </span>  
+  </div>  </p> </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.8/angular.js"></script>
+    <script src="/scripts.js"></script>
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
