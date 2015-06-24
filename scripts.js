@@ -13,5 +13,11 @@ app.controller('TodoCtrl', function($scope) {
       $scope.todos.splice(indexOf, 1);
     }
   };
+  $scope.add = function(e) {
+    if (e.which && e.which === 13) {
+      $scope.todos.push($scope.newTodo);
+      $scope.newTodo = '';
+    }
+  };
   
  });
