@@ -27,7 +27,7 @@
   <div class="col-md-1">.O</div>
   <div class="col-md-1">.M</div>
 </div>
-<p>This is the index,
+<p>This is the index,0
 I shall now add a line break<br>new line
 <br>here is a random photo of a band I like <br><img src="http://s3.amazonaws.com/rapgenius/1364187397_mcr.jpg" alt="random words">
 <br>Blah blah blah words, things to say. What is the meaning of life?
@@ -40,6 +40,12 @@ I shall now add a line break<br>new line
  <div class="page-container" ng-controller="TodoCtrl">
   <input type="text" ng-model="message" />
   <span> {{ message }} </span>  
+   <h2>Todo</h2>
+      <ul class="todo-list" ng-repeat="todo in todos track by $index"><li>
+          <span>{{ todo }}</span>
+          <button class="bt bt-achieve" ng-click="done(todo)">Done</button>
+        </li>
+      </ul>
  </div> 
 </div>
     <script src="/scripts.js"></script>
