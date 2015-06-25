@@ -17,9 +17,9 @@ var todosStorage=localStorage.getItem("todos");
 	  $scope.todos=todosStorage;
 	}else{
 	  $scope.todos = [
-        'Learn Sketch', 
-        'Look at Dribbble and feel inferior',
-        'Actually learn how to use the Pen tool'
+        'Listen to MCR', 
+        'Look at MCR and feel inferior',
+        'Listen to other Punk Rock bands similar to MCR, such as Green Day and Sleeping With Sirens, but still love MCR more'
       ];
 	}
 	
