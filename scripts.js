@@ -14,7 +14,7 @@ app.controller('TodoCtrl', function($scope) {
   
 var todosStorage=localStorage.getItem("todos");
     if(todosStorage!=null){
-	  $scope.todos=todosStorage;
+	  $scope.todos=JSON.parse(todosStorage);
 	}else{
 	  $scope.todos = [
         'Listen to MCR', 
