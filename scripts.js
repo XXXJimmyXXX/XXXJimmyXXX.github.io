@@ -1,11 +1,5 @@
 var hasStorage;
-<!DOCTYPE html>
-<html>
-<body>
 
-<div id="result"></div>
-
-<script>
 // Check browser support
 if (typeof(Storage) != "undefined") {
    hasStorage=true;
@@ -13,10 +7,7 @@ if (typeof(Storage) != "undefined") {
 } else {
 hasStorage=false
 }
-</script>
 
-</body>
-</html>
 var app = angular.module('Todo', []);
 app.controller('TodoCtrl', function($scope) { 
  $scope.message = 'leave a random comment here.';
