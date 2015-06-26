@@ -13,3 +13,8 @@ padding-left:1rem;
 margin-right:auto;
 padding-right:1rem:
 }
+
+.standard-height{
+max-height:42.857rem;
+width:auto;
+}
